@@ -1,0 +1,433 @@
+{
+  "final": {
+    "draft_version": 3,
+    "verdicts": [
+      {
+        "sentence_id": 1,
+        "sentence": "Passkeys are cryptographic authentication credentials built on the FIDO2 protocol\u202f[S1].",
+        "section": "Introduction",
+        "citations": [
+          "S1"
+        ],
+        "verdict": "supported",
+        "reason": "S1 directly states that passkeys are cryptographic authentication credentials built on the FIDO2 protocol.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 2,
+        "sentence": "They rely on public\u2011key cryptography to authenticate users without transmitting secrets to servers\u202f[S5].",
+        "section": "Introduction",
+        "citations": [
+          "S5"
+        ],
+        "verdict": "supported",
+        "reason": "S5 states that passkeys rely on public\u2011key cryptography and that the private key never leaves the device, so no secrets are transmitted to servers.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 3,
+        "sentence": "Passkeys aim to replace traditional passwords, providing strong, phishing\u2011resistant sign\u2011in and eliminating password weaknesses while offering a user\u2011friendly experience\u202f[S3][S8][S10][S11].",
+        "section": "Introduction",
+        "citations": [
+          "S3",
+          "S8",
+          "S10",
+          "S11"
+        ],
+        "verdict": "supported",
+        "reason": "S3, S8, S10, and S11 together show that passkeys aim to replace passwords, are phishing\u2011resistant, eliminate password weaknesses, and provide a user\u2011friendly experience.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 4,
+        "sentence": "When combined with device biometrics or a PIN, passkeys can serve as a multifactor authentication method\u202f[S3].",
+        "section": "Introduction",
+        "citations": [
+          "S3"
+        ],
+        "verdict": "supported",
+        "reason": "S3 explicitly says passkeys can serve as multifactor authentication when combined with device biometrics or a PIN.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 5,
+        "sentence": "During registration, the device generates an asymmetric key pair; the private key is stored securely on the device and the public key is sent to the server\u202f[S1][S12].",
+        "section": "How Passkeys Work",
+        "citations": [
+          "S1",
+          "S12"
+        ],
+        "verdict": "supported",
+        "reason": "S1 and S12 both describe generation of an asymmetric key pair with the private key stored on the device and the public key sent to the server.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 6,
+        "sentence": "For authentication, the server sends a cryptographic challenge; the device signs it with the private key after local biometric or PIN verification and returns the signed challenge, username, and credential ID\u202f[S1][S2][S6][S12].",
+        "section": "How Passkeys Work",
+        "citations": [
+          "S1",
+          "S2",
+          "S6",
+          "S12"
+        ],
+        "verdict": "supported",
+        "reason": "S2 details the three\u2011step authentication process including biometric/PIN verification and returning the signed challenge, username, and credential ID; S1 confirms the challenge\u2011signing step.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 7,
+        "sentence": "The server verifies the signature using the stored public key, confirming possession of the private key without ever seeing it\u202f[S1][S2][S6].",
+        "section": "How Passkeys Work",
+        "citations": [
+          "S1",
+          "S2",
+          "S6"
+        ],
+        "verdict": "supported",
+        "reason": "S1, S2, and S6 all state that the server verifies the signature using the stored public key without ever seeing the private key.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 8,
+        "sentence": "This process is mediated by the WebAuthn API (navigator.credentials.create() and navigator.credentials.get()) and relies on CTAP for authenticator communication\u202f[S13][S14][S5].",
+        "section": "How Passkeys Work",
+        "citations": [
+          "S13",
+          "S14",
+          "S5"
+        ],
+        "verdict": "supported",
+        "reason": "S13 and S14 describe mediation via the WebAuthn API (navigator.credentials.create() and get()) and reliance on CTAP; S5 confirms WebAuthn implementation.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 9,
+        "sentence": "The key pair is origin\u2011bound, meaning it is unique to the website or app for which it was created\u202f[S3].",
+        "section": "How Passkeys Work",
+        "citations": [
+          "S3"
+        ],
+        "verdict": "supported",
+        "reason": "S3 states that the key pair is origin\u2011bound and unique to the website or app for which it was created.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 10,
+        "sentence": "Because the private key never leaves the device, a phishing site cannot obtain a usable secret\u202f[S3][S7][S8][S11].",
+        "section": "Security Advantages",
+        "citations": [
+          "S3",
+          "S7",
+          "S8",
+          "S11"
+        ],
+        "verdict": "supported",
+        "reason": "S7 explains that the private key never leaves the device, so a phishing site cannot obtain a usable secret.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 11,
+        "sentence": "Each passkey is bound to the origin of the service, so credentials cannot be reused on other sites\u202f[S3][S7][S9].",
+        "section": "Security Advantages",
+        "citations": [
+          "S3",
+          "S7",
+          "S9"
+        ],
+        "verdict": "supported",
+        "reason": "S3 and S7 both state that each passkey is bound to its origin and cannot be reused on other sites.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 12,
+        "sentence": "Servers store only the public key, which is useless without the private key, preventing bulk credential leaks\u202f[S3][S7][S9].",
+        "section": "Security Advantages",
+        "citations": [
+          "S3",
+          "S7",
+          "S9"
+        ],
+        "verdict": "supported",
+        "reason": "S7 notes that servers store only the public key, which is useless without the private key, preventing bulk credential leaks.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 13,
+        "sentence": "Passkeys resist guessing and brute\u2011force attacks due to their random, cryptographic nature\u202f[S7][S9].",
+        "section": "Security Advantages",
+        "citations": [
+          "S7",
+          "S9"
+        ],
+        "verdict": "supported",
+        "reason": "S7 and S9 state passkeys are random cryptographic keys resisting guessing and brute\u2011force attacks.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 14,
+        "sentence": "When combined with device biometrics or a PIN, they provide multifactor authentication\u202f[S3][S8][S11].",
+        "section": "Security Advantages",
+        "citations": [
+          "S3",
+          "S8",
+          "S11"
+        ],
+        "verdict": "supported",
+        "reason": "S3, S8 and S11 indicate passkeys combined with device biometrics or PIN provide multifactor authentication.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 15,
+        "sentence": "The origin\u2011bound design also stops accidental entry of credentials on malicious pages\u202f[S8][S11].",
+        "section": "Security Advantages",
+        "citations": [
+          "S8",
+          "S11"
+        ],
+        "verdict": "supported",
+        "reason": "S8 and S11 show origin\u2011bound design prevents accidental credential entry on malicious sites.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 16,
+        "sentence": "Users no longer need to remember or store passwords\u202f[S10][S11].",
+        "section": "Usability Benefits",
+        "citations": [
+          "S10",
+          "S11"
+        ],
+        "verdict": "supported",
+        "reason": "S10 and S11 state passkeys eliminate the need to remember or store passwords.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 17,
+        "sentence": "Login is performed with a local biometric or PIN, enabling quick, hassle\u2011free sign\u2011in\u202f[S10][S11][S12].",
+        "section": "Usability Benefits",
+        "citations": [
+          "S10",
+          "S11",
+          "S12"
+        ],
+        "verdict": "supported",
+        "reason": "S10, S11 and S12 describe login via local biometric/PIN for quick, hassle\u2011free sign\u2011in.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 18,
+        "sentence": "Passkeys can be synced across a user\u2019s own devices via services such as iCloud Keychain or Google Password Manager\u202f[S13][S14][S20].",
+        "section": "Usability Benefits",
+        "citations": [
+          "S13",
+          "S14",
+          "S20"
+        ],
+        "verdict": "supported",
+        "reason": "S13, S14 and S20 confirm passkeys can be synced across devices via iCloud Keychain or Google Password Manager.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 19,
+        "sentence": "This reduces manual password entry, memorization effort, and reset processes\u202f[S10][S11].",
+        "section": "Usability Benefits",
+        "citations": [
+          "S10",
+          "S11"
+        ],
+        "verdict": "supported",
+        "reason": "S10 and S11 note reduction in manual password entry, memorization effort and reset processes.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 20,
+        "sentence": "Passkeys follow FIDO2 standards, using WebAuthn for browser interaction and CTAP for authenticator communication\u202f[S3][S5][S12][S13].",
+        "section": "Implementation and Standards",
+        "citations": [
+          "S3",
+          "S5",
+          "S12",
+          "S13"
+        ],
+        "verdict": "supported",
+        "reason": "S3, S5, S12 and S13 affirm passkeys follow FIDO2 using WebAuthn and CTAP.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 21,
+        "sentence": "Implementation requires the WebAuthn API (navigator.credentials.create() and navigator.credentials.get())\u202f[S13][S14].",
+        "section": "Implementation and Standards",
+        "citations": [
+          "S13",
+          "S14"
+        ],
+        "verdict": "supported",
+        "reason": "S13 and S14 show implementation requires navigator.credentials.create() and get() WebAuthn calls.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 22,
+        "sentence": "Private keys are stored in hardware security modules, platform authenticators (e.g., Windows Hello, Touch ID), or password managers, while public keys are held by the relying party\u202f[S12][S13].",
+        "section": "Implementation and Standards",
+        "citations": [
+          "S12",
+          "S13"
+        ],
+        "verdict": "supported",
+        "reason": "S12 and S13 describe private key storage in HSM, platform authenticators or password managers, public key with relying party.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 23,
+        "sentence": "Credential synchronization across devices is supported by platform key\u2011chain services\u202f[S13][S14][S20].",
+        "section": "Implementation and Standards",
+        "citations": [
+          "S13",
+          "S14",
+          "S20"
+        ],
+        "verdict": "supported",
+        "reason": "S13, S14 and S20 state credential synchronization is supported by platform key\u2011chain services.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 24,
+        "sentence": "NIST SP 800-63B-4 permits syncable authenticators at authentication assurance level\u202f2 when the sync arrangement meets specific requirements\u202f[S20].",
+        "section": "Implementation and Standards",
+        "citations": [
+          "S20"
+        ],
+        "verdict": "supported",
+        "reason": "S20 directly states NIST SP 800-63B-4 permits syncable authenticators at AAL2 when sync meets requirements.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 25,
+        "sentence": "The WebAuthn specification does not define a recovery protocol, leaving recovery to relying parties and authenticator platforms\u202f[S21].",
+        "section": "Implementation and Standards",
+        "citations": [
+          "S21"
+        ],
+        "verdict": "supported",
+        "reason": "S21 explicitly states the WebAuthn spec does not define a recovery protocol.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 26,
+        "sentence": "Passkey adoption is hindered by device dependency; loss or damage to a device can lock users out unless recovery mechanisms are in place\u202f[S15][S16][S17].",
+        "section": "Challenges and Future Outlook",
+        "citations": [
+          "S15",
+          "S16",
+          "S17"
+        ],
+        "verdict": "supported",
+        "reason": "S15 notes device dependency causing lockout; S16 and S17 mention recovery pathways needed.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 27,
+        "sentence": "Initial setup can be confusing for non\u2011technical users, slowing uptake\u202f[S15].",
+        "section": "Challenges and Future Outlook",
+        "citations": [
+          "S15"
+        ],
+        "verdict": "supported",
+        "reason": "S15 says setting up passkeys can be confusing, hindering adoption.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 28,
+        "sentence": "Cross\u2011platform support remains inconsistent, complicating use across different operating systems and browsers\u202f[S15][S16][S17].",
+        "section": "Challenges and Future Outlook",
+        "citations": [
+          "S15",
+          "S16",
+          "S17"
+        ],
+        "verdict": "supported",
+        "reason": "S15 states cross\u2011platform support is inconsistent; S16 and S17 echo this.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 29,
+        "sentence": "Integrating passkeys with existing password\u2011based systems requires handling diverse devices, browsers, and vendor ecosystems, which can introduce complexity\u202f[S16][S17][S18][S19].",
+        "section": "Challenges and Future Outlook",
+        "citations": [
+          "S16",
+          "S17",
+          "S18",
+          "S19"
+        ],
+        "verdict": "supported",
+        "reason": "S16 says adoption requires handling diverse devices, browsers, vendor ecosystems, introducing complexity.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 30,
+        "sentence": "Poor implementation may introduce new risks, necessitating careful handling of diverse devices, browsers, and vendor ecosystems\u202f[S16][S17].",
+        "section": "Challenges and Future Outlook",
+        "citations": [
+          "S16",
+          "S17"
+        ],
+        "verdict": "supported",
+        "reason": "S16 says poor implementation can introduce new risks and notes complexity of diverse devices.",
+        "missing_evidence_query": null
+      },
+      {
+        "sentence_id": 31,
+        "sentence": "Future improvements may focus on standardizing cross\u2011ecosystem passkey transfer, enhancing recovery mechanisms, and continued convergence of browser and authenticator specifications to improve usability and security\u202f[S21][S22][S13].",
+        "section": "Challenges and Future Outlook",
+        "citations": [
+          "S21",
+          "S22",
+          "S13"
+        ],
+        "verdict": "supported",
+        "reason": "S22 covers cross\u2011ecosystem transfer standardization; S21 mentions recovery mechanisms; S13 notes browser/authenticator spec convergence.",
+        "missing_evidence_query": null
+      }
+    ],
+    "summary": {
+      "draft_version": 3,
+      "factual_sentences": 31,
+      "supported": 31,
+      "unsupported": 0,
+      "missing_citation": 0,
+      "citation_coverage": 1.0,
+      "supported_rate": 1.0
+    }
+  },
+  "history": [
+    {
+      "draft_version": 1,
+      "factual_sentences": 28,
+      "supported": 26,
+      "unsupported": 2,
+      "missing_citation": 0,
+      "citation_coverage": 1.0,
+      "supported_rate": 0.9286
+    },
+    {
+      "draft_version": 2,
+      "factual_sentences": 27,
+      "supported": 26,
+      "unsupported": 1,
+      "missing_citation": 0,
+      "citation_coverage": 1.0,
+      "supported_rate": 0.963
+    },
+    {
+      "draft_version": 3,
+      "factual_sentences": 31,
+      "supported": 31,
+      "unsupported": 0,
+      "missing_citation": 0,
+      "citation_coverage": 1.0,
+      "supported_rate": 1.0
+    }
+  ],
+  "revision_count": 2,
+  "human_revisions": 0
+}

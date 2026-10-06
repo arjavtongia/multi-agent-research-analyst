@@ -1,0 +1,245 @@
+[
+  {
+    "id": "S1",
+    "url": "https://www.sentinelone.com/cybersecurity-101/identity-security/how-does-passkey-work/",
+    "title": "How Do Passkeys Work? Authentication Flow Guide",
+    "kind": "page",
+    "sub_question_ids": [
+      "q1"
+    ],
+    "note_count": 5,
+    "cited": true
+  },
+  {
+    "id": "S2",
+    "url": "https://www.passkeys.io/technical-details",
+    "title": "Passkeys: How Do They Work?",
+    "kind": "page",
+    "sub_question_ids": [
+      "q1"
+    ],
+    "note_count": 3,
+    "cited": true
+  },
+  {
+    "id": "S3",
+    "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-passkeys-fido2",
+    "title": "Passkeys (FIDO2) authentication method in Microsoft Entra ID - Microsoft Entra ID | Microsoft Learn",
+    "kind": "page",
+    "sub_question_ids": [
+      "q1"
+    ],
+    "note_count": 4,
+    "cited": true
+  },
+  {
+    "id": "S4",
+    "url": "https://en.wikipedia.org/wiki/Public-key_cryptography",
+    "title": "Public-key cryptography - Wikipedia",
+    "kind": "page",
+    "sub_question_ids": [
+      "q2"
+    ],
+    "note_count": 5,
+    "cited": false
+  },
+  {
+    "id": "S5",
+    "url": "https://www.zdnet.com/article/how-passkeys-work-going-passwordless-with-public-key-cryptography/",
+    "title": "How passkeys work: Going passwordless with public key cryptography - ZDNET",
+    "kind": "page",
+    "sub_question_ids": [
+      "q2"
+    ],
+    "note_count": 5,
+    "cited": true
+  },
+  {
+    "id": "S6",
+    "url": "https://www.ssh.com/academy/passwordless-authentication-with-passkeys",
+    "title": "Passwordless Authentication with Passkeys",
+    "kind": "page",
+    "sub_question_ids": [
+      "q2"
+    ],
+    "note_count": 3,
+    "cited": true
+  },
+  {
+    "id": "S7",
+    "url": "https://www.authgear.com/post/passkey-vs-password-why-passkeys-are-the-future-of-security/",
+    "title": "Passkey vs Password: Are Passkeys Safer? (2026 Guide)",
+    "kind": "page",
+    "sub_question_ids": [
+      "q3"
+    ],
+    "note_count": 5,
+    "cited": true
+  },
+  {
+    "id": "S8",
+    "url": "https://www.consumerreports.org/electronics/digital-security/should-you-use-passkeys-instead-of-passwords-a1201817243/",
+    "title": "Should You Use Passkeys Instead of Passwords? - Consumer Reports",
+    "kind": "page",
+    "sub_question_ids": [
+      "q3",
+      "q4"
+    ],
+    "note_count": 9,
+    "cited": true
+  },
+  {
+    "id": "S9",
+    "url": "https://tekpon.com/insights/security-compliance/password/passkey-vs-password/",
+    "title": "Passkey vs Password: What\u2019s the Difference and Which is Safer? - Tekpon 2026",
+    "kind": "page",
+    "sub_question_ids": [
+      "q3"
+    ],
+    "note_count": 5,
+    "cited": true
+  },
+  {
+    "id": "S10",
+    "url": "https://www.softguide.com/software/data-protection/articles/advantages-of-passkeys-over-traditional-passwords",
+    "title": "Advantages of passkeys over traditional passwords",
+    "kind": "page",
+    "sub_question_ids": [
+      "q4"
+    ],
+    "note_count": 3,
+    "cited": true
+  },
+  {
+    "id": "S11",
+    "url": "https://defion.security/en/blog/advantages-and-risks-of-passkeys/",
+    "title": "Passkeys: the advantages and risks of these new passwords | DEFION Security",
+    "kind": "page",
+    "sub_question_ids": [
+      "q4"
+    ],
+    "note_count": 3,
+    "cited": true
+  },
+  {
+    "id": "S12",
+    "url": "https://learn.microsoft.com/en-us/aspnet/core/security/authentication/passkeys/?view=aspnetcore-10.0",
+    "title": "Enable Web Authentication API (WebAuthn) passkeys | Microsoft Learn",
+    "kind": "page",
+    "sub_question_ids": [
+      "q5"
+    ],
+    "note_count": 5,
+    "cited": true
+  },
+  {
+    "id": "S13",
+    "url": "https://martinuke0.github.io/posts/2026-09-04-implementing-webauthn-passkeys-inside-the-fido2-registration-ceremony/",
+    "title": "Implementing WebAuthn Passkeys: Inside the FIDO2 Registration Ceremony | martinuke0's Blog",
+    "kind": "page",
+    "sub_question_ids": [
+      "q5"
+    ],
+    "note_count": 4,
+    "cited": true
+  },
+  {
+    "id": "S14",
+    "url": "https://www.authgear.com/post/how-to-implement-passkeys-developer-guide/",
+    "title": "How to Implement Passkeys with WebAuthn: Developer Guide",
+    "kind": "page",
+    "sub_question_ids": [
+      "q5"
+    ],
+    "note_count": 5,
+    "cited": true
+  },
+  {
+    "id": "S15",
+    "url": "https://mojoauth.com/blog/what-are-the-limitations-of-passkeys",
+    "title": "Passkey Limitations: Understanding the Drawbacks",
+    "kind": "page",
+    "sub_question_ids": [
+      "q6"
+    ],
+    "note_count": 3,
+    "cited": true
+  },
+  {
+    "id": "S16",
+    "url": "https://www.tactiveresearchgroup.com/go/magazine/post/passkey-limitations-implementation-risks-and-hidden-challenges",
+    "title": "Passkey Limitations, Implementation Risks and Hidden Challenges | Tactive Research Group",
+    "kind": "page",
+    "sub_question_ids": [
+      "q6"
+    ],
+    "note_count": 2,
+    "cited": true
+  },
+  {
+    "id": "S17",
+    "url": "https://www.linkedin.com/pulse/passkey-adoption-growth-benefits-challenges-xgo9f/",
+    "title": "Passkey Adoption Growth, Benefits, and Challenges",
+    "kind": "page",
+    "sub_question_ids": [
+      "q6"
+    ],
+    "note_count": 5,
+    "cited": true
+  },
+  {
+    "id": "S18",
+    "url": "https://www.authgear.com/post/from-passwords-to-passkeys-phased-migration-plan/",
+    "title": "From Passwords to Passkeys: A Phased Migration Plan for Existing Users",
+    "kind": "page",
+    "sub_question_ids": [
+      "gap1-1"
+    ],
+    "note_count": 3,
+    "cited": true
+  },
+  {
+    "id": "S19",
+    "url": "https://www.softguide.com/software/data-protection/articles/introducing-passkeys-into-existing-it-landscapes",
+    "title": "Introducing passkeys into existing IT landscapes",
+    "kind": "page",
+    "sub_question_ids": [
+      "gap1-1"
+    ],
+    "note_count": 4,
+    "cited": true
+  },
+  {
+    "id": "S20",
+    "url": "https://nhimg.org/passwordless-passkeys-guide",
+    "title": "Passwordless and Passkeys Guide: Rollout and Recovery",
+    "kind": "page",
+    "sub_question_ids": [
+      "gap1-2"
+    ],
+    "note_count": 5,
+    "cited": true
+  },
+  {
+    "id": "S21",
+    "url": "https://ashishsrivastav.com/blog/passkeys-sync-device-bound-recovery",
+    "title": "Passkeys: Sync, Device-Bound, and Recovery",
+    "kind": "page",
+    "sub_question_ids": [
+      "gap1-2"
+    ],
+    "note_count": 4,
+    "cited": true
+  },
+  {
+    "id": "S22",
+    "url": "https://recatools.com/guides/passkeys-explained-2026/",
+    "title": "Passkeys Explained: What Replaces Passwords (2026) \u2014 Practical Tools. Trusted Intelligence.",
+    "kind": "page",
+    "sub_question_ids": [
+      "gap1-2"
+    ],
+    "note_count": 3,
+    "cited": true
+  }
+]
