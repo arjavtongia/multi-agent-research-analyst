@@ -1,0 +1,33 @@
+# General public research questions used by `research-agents eval`.
+# Each run is auto-approved; see README "Evaluation" for the metrics recorded.
+questions:
+  - id: tech-llm-energy
+    topic: technology
+    question: What are the main approaches to reducing the energy used to train and run large language models?
+  - id: tech-passkeys
+    topic: technology
+    question: How do passkeys work, and what problems do they solve compared with passwords?
+  - id: tech-solid-state-batteries
+    topic: technology
+    question: What is the current state of solid-state batteries for electric vehicles?
+  - id: econ-minimum-wage
+    topic: economics
+    question: What does recent research say about the effect of minimum wage increases on employment?
+  - id: econ-quantitative-tightening
+    topic: economics
+    question: How have central banks carried out quantitative tightening since 2022, and what effects have been reported?
+  - id: econ-four-day-week
+    topic: economics
+    question: What have pilot programs found about the effects of a four-day work week on productivity and wellbeing?
+  - id: sci-microplastics
+    topic: science
+    question: What is known so far about microplastics in the human body and their possible health effects?
+  - id: sci-base-editing
+    topic: science
+    question: How does CRISPR base editing differ from standard CRISPR-Cas9 editing, and where is it being tested?
+  - id: sci-fusion
+    topic: science
+    question: What progress has been made toward commercial nuclear fusion power in the last five years?
+  - id: sci-direct-air-capture
+    topic: science
+    question: How much carbon dioxide does direct air capture remove today, and what does it cost per tonne?
